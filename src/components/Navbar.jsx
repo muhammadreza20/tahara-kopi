@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import logo from './assets/logo-tahara.png';
 
 function Navbar() {
   const navigate = useNavigate()
@@ -127,7 +126,7 @@ function Navbar() {
           }}
           className="mobile-logo">
           <img 
-            src={logo}
+            src="/assets/logo-tahara.png"
             alt="Tahara Kopi Logo"
             style={{
               height: '50px',
@@ -351,7 +350,7 @@ function Navbar() {
                     cursor: 'pointer'
                   }}>
                   <img 
-                    src={logo}
+                    src="/assets/logo-tahara.png" 
                     alt="Tahara Kopi Logo"
                     style={{
                       height: '40px',
