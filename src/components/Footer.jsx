@@ -31,35 +31,36 @@ function Footer() {
         zIndex: 2
       }}>
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '3rem',
-          marginBottom: '3rem',
-          alignItems: 'flex-start'
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+        gap: 'clamp(2rem, 4vw, 3rem)',
+        marginBottom: 'clamp(2rem, 4vw, 3rem)',
+        alignItems: 'flex-start'
         }}>
           <div style={{
-            minWidth: '300px'
+            minWidth: 'clamp(250px, 60vw, 300px)'
           }}>
             <div style={{
               display: 'flex',
               alignItems: 'center',
-              marginBottom: '2rem'
+              marginBottom: 'clamp(1.5rem, 3vw, 2rem)',
+              flexWrap: 'wrap',
+              gap: '1rem'
             }}>
               <img 
                 src="/assets/logo-tahara.png"
                 alt="Tahara Kopi Logo"
                 style={{
-                  height: '70px',
+                  height: 'clamp(50px, 10vw, 70px)',
                   width: 'auto',
                   objectFit: 'contain',
-                  marginRight: '1.5rem',
                   filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'
                 }}
               />
               <div>
                 <h2 style={{
                   margin: '0',
-                  fontSize: '1.5rem',
+                  fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
                   fontWeight: '700',
                   color: '#fbbf24',
                   letterSpacing: '1px'
@@ -68,17 +69,17 @@ function Footer() {
                 </h2>
                 <p style={{
                   margin: '0.2rem 0 0 0',
-                  fontSize: '0.9rem',
+                  fontSize: 'clamp(0.8rem, 2vw, 0.9rem)',
                   color: 'rgba(251, 191, 36, 0.8)',
                   fontStyle: 'italic'
                 }}>
-                  Kopi Nusantara Terbaik
+                  Coffee & Eatery
                 </p>
               </div>
             </div>
             <p style={{
               margin: '0',
-              fontSize: '1.1rem',
+              fontSize: 'clamp(1rem, 2.2vw, 1.1rem)',
               color: 'rgba(255, 255, 255, 0.9)',
               lineHeight: '1.7',
               maxWidth: '400px',
@@ -97,7 +98,7 @@ function Footer() {
             <div>
               <h3 style={{
                 margin: '0 0 1.2rem 0',
-                fontSize: '1.2rem',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
                 fontWeight: '600',
                 color: '#fbbf24',
                 position: 'relative',
@@ -131,7 +132,7 @@ function Footer() {
                     style={{ 
                       color: 'rgba(255, 255, 255, 0.8)', 
                       textDecoration: 'none',
-                      fontSize: '1rem',
+                      fontSize: 'clamp(0.9rem, 2vw, 1rem)',
                       fontWeight: '400',
                       position: 'relative',
                       transition: 'all 0.3s ease',
@@ -155,7 +156,7 @@ function Footer() {
             <div>
               <h3 style={{
                 margin: '0 0 1.2rem 0',
-                fontSize: '1.2rem',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
                 fontWeight: '600',
                 color: '#fbbf24',
                 position: 'relative',
@@ -210,7 +211,7 @@ function Footer() {
             <div>
               <h3 style={{
                 margin: '0 0 1.2rem 0',
-                fontSize: '1.2rem',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
                 fontWeight: '600',
                 color: '#fbbf24',
                 position: 'relative',

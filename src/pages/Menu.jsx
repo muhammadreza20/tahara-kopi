@@ -345,13 +345,13 @@ function Menu() {
                         transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s'
                       }} />
                       <h2 style={{
-                        fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
-                        color: '#fde047',
-                        fontWeight: '700',
-                        margin: 0,
-                        opacity: animateElements['full-menu'] ? 1 : 0,
-                        transform: animateElements['full-menu'] ? 'translateY(0)' : 'translateY(30px)',
-                        transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s'
+                      fontSize: 'clamp(1.4rem, 3vw, 2.5rem)',
+                      color: '#fde047',
+                      fontWeight: '700',
+                      margin: 0,
+                      opacity: animateElements['full-menu'] ? 1 : 0,
+                      transform: animateElements['full-menu'] ? 'translateY(0)' : 'translateY(30px)',
+                      transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s'
                       }}>
                         {category.name}
                       </h2>
@@ -394,7 +394,7 @@ function Menu() {
                       }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.8rem' }}>
                           <h3 style={{
-                            fontSize: '1.3rem',
+                            fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
                             color: '#fbbf24',
                             fontWeight: '700',
                             margin: 0,
@@ -419,7 +419,7 @@ function Menu() {
                           )}
                         </div>
                         <p style={{
-                          fontSize: '1.1rem',
+                          fontSize: 'clamp(1rem, 2vw, 1.1rem)',
                           marginBottom: '1rem',
                           color: '#fde047',
                           fontWeight: '800'
@@ -427,7 +427,7 @@ function Menu() {
                           {item.price}
                         </p>
                         <p style={{
-                          fontSize: '1rem',
+                          fontSize: 'clamp(0.9rem, 1.8vw, 1rem)',
                           color: 'rgba(255, 255, 255, 0.85)',
                           lineHeight: '1.6',
                           flex: 1
