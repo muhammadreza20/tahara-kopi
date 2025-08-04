@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md'
+import logo from './assets/logo-tahara.png';
 
 function Footer() {
   const [activeFooterNav, setActiveFooterNav] = useState('')
@@ -46,7 +47,7 @@ function Footer() {
               marginBottom: '2rem'
             }}>
               <img 
-                src="/src/assets/logo-tahara.png" 
+                src={logo}
                 alt="Tahara Kopi Logo"
                 style={{
                   height: '70px',

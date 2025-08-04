@@ -4,6 +4,7 @@ import { MdLocalCafe, MdFastfood, MdRestaurant } from 'react-icons/md'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { getBerandaData } from '../api/beranda'
+import logo from './assets/logo-tahara.png';
 
 function Home() {
   const [showScrollIndicator, setShowScrollIndicator] = useState(true)
@@ -84,7 +85,7 @@ return (
         textAlign: window.innerWidth <= 768 ? 'center' : 'left'
       }}>
         <img 
-          src="/src/assets/logo-tahara.png" 
+          src={logo}
           alt="Tahara Kopi Logo"
           style={{
             height: 'clamp(100px, 20vw, 160px)',
